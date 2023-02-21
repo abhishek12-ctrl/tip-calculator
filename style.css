@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 233, 238);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.left{
+    width: 300px;
+    height: 365px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.left > div{
+    margin-bottom: 14px;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+input{
+    text-align: right;
+    font-size: 1.2rem;
+    width: 270px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(218, 233, 238);
+    padding: 5px;
+}
+#tip button{
+    font-size: 1rem;
+    margin: 3px;
+    padding: 8px 10px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#btn{
+    background-color: rgb(27, 65, 53);
+    color: rgb(218, 233, 238);
+}
+.custom{
+    background-color: rgb(218, 233, 238);
+    color: rgb(27, 65, 53);
+}
+#tip_amt{
+    width: 70px;
+}
+.err{
+    font-size: 0.8rem;
+    color: red;
+    visibility: hidden;
+}
+#calculate{
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    background-color: rgb(27, 65, 53);
+    color: rgb(218, 233, 238);
+    border: none;
+    border-radius: 10px;
+}
+.right{
+    min-width: 300px;
+    height: 365px;
+    padding: 20px;
+    background-color: rgb(27, 65, 53);
+    border-radius: 20px;
+}
+.total{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.result{
+    font-size: 2.4rem;
+    color: rgb(218, 233, 238);
+    font-weight: bold;
+    padding-left: 30px;
+}
+.btn{
+    text-align: center;
+    margin-top: 138px;
+}
+#reset{
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    background-color: rgb(218, 233, 238);
+    color: rgb(27, 65, 53);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}

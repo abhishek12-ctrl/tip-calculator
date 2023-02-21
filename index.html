@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <label for="billamt">Bill:</label>
+                <input id="billamt" placeholder="$"><br>
+                <span id="billerr" class="err">* Please enter the bill amount</span>
+            </div>
+            <div>
+                <label for="tip">Enter Tip:</label>
+                <div id="tip">
+                    <button id="btn" value="5">5%</button>
+                    <button id="btn" value="10">10%</button>
+                    <button id="btn" value="15">15%</button>
+                    <button id="btn" value="20">20%</button>
+                    <button id="btn" value="25">25%</button>
+                    <button id="custom" class="custom">Custom</button>
+                    <input id="tip_amt" placeholder="%"><br>
+                </div>
+                <span id="tiperr" class="err">* Please enter the tip</span>
+            </div>
+            <div>
+                <label for="people">Number of People:</label>
+                <input id="people" placeholder="0"><br>
+                <span id="peopleerr" class="err">* Please enter number of people</span>
+            </div>
+            <div>
+                <button id="calculate">Calculate</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="total">
+                <p style="font-size: 0.8rem;"><span style="font-size: 1.3rem; font-weight: bold;">Tip Amount</span><br>/ person</p>
+                <p id="tipamt" class="result">$0.00</p>
+            </div>
+            <div class="total">
+                <p style="font-size: 0.8rem;"><span style="font-size: 1.3rem; font-weight: bold;">Total</span><br>/ person</p>
+                <p id="totalamt" class="result">$0.00</p>
+            </div>
+            <div class="btn">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
